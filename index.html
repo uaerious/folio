@@ -2,15 +2,64 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8"/>
-    <meta name="viewport"content="width=device-width, initial-scale=1.0">
-    <title>Very Nice Website</title>
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
   </head>
   <body>
-    <h1> HELLO!!</h1>
-    <h2> About me :D</h2>
-    <hr>
-    <p>Name &#x1F636;<br>Interests: Formula 1</p>
-    <a href="https://github.com/uaerious/folio" target="_blank"> Github Repo </a>
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Wayn.</p>
+        <h3>Education</h3>
+    <ul>
+      <li>Red Swastika School [2013-2018]</li>
+      <li>Chung Cheng High School (Main) [2019-2022]</li>
+      <li>Anderson Serangoon JC [2023-2024]</li>
+    </ul>
+      </section>
+      <section id="projects">
+        <h2>My Projects</h2>
+        <ul>
+          <li>
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+          </li>
+          <li>
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+          </li>
+          <li>
+            <h3>Project 3</h3>
+            <p>Description of project 3.</p>
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit-form.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
